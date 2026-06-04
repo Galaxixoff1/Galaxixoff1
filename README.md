@@ -1,39 +1,50 @@
-root@GALAXIX:~# ./whoami
+# `[robin@fedora-kde ~]$ ./whoami`
 
-Apprenti SysAdmin & Dompteur de Serveurs | Fedora KDE, YAML et pas mal de sueurs froides.
+> **Apprenti SysAdmin & Dompteur de Serveurs**
+> *Tourne à l'eau plate, Fedora & l'acharnement pur.*
 
-Salut, c'est Robin (alias Galaxix). J'ai 18 ans, je suis étudiant en Bac Pro CIEL et... mon profil GitHub est un peu vide. Pourquoi ? Parce que je déteste le code front-end et que je passe 90% de mon temps dans des terminaux SSH ou sur l'interface de Proxmox.
+Salut, c'est **Robin** (*aka Galaxix*). Mon délire ? Prendre de la ferraille bare-metal et la transformer en infrastructure qui tient la charge. De mon chauffage d'appoint (un Fujitsu dans ma chambre) jusqu'aux dédiés en Pologne, j'aime quand ça ping et quand le routage est propre.
 
-Mon truc, ce n'est pas de faire des sites jolis, c'est de faire en sorte que les serveurs qui les hébergent ne crashent pas. Je suis loin de tout connaître par cœur, mais j'apprends en cassant des trucs sur mon homelab.
+Je ne suis **absolument pas un dev**. Si tu cherches des dépôts pleins de code React ou de CSS magnifique, tu t'es trompé d'adresse (d'où mon GitHub vide, je planque jalousement mes scripts bash faits à l'arrache). Moi, mon truc, c'est le YAML, les hyperviseurs et m'assurer que la prod des autres ne crashe pas.
 
-⚙️ ./stack_trace - Ce que je bidouille au quotidien
+---
 
-Virtu & Conteneurs : Proxmox VE, LXC, Docker (et Coolify pour garder l'hôte propre, fini les compose dégueulasses).
+### ⚙️ `./stack_trace` - L'Arsenal
 
-Réseau : Routage Multi-IP (Failover OVH), Cloudflare Tunnels, DNS via AdGuard Home.
+**[ SYS.VIRT ] - Systèmes & Virtualisation**
+* **Hyperviseurs :** Proxmox VE & Proxmox Backup Server (parce qu'un `rm -rf /` est vite arrivé)
+* **OS :** Fedora KDE (Daily), Debian / Ubuntu Server
+* **Conteneurs :** Docker couplé à Coolify (le Vercel du pauvre, mais en mieux et self-hosted)
+* **Next step :** Bouffer du Nova et Neutron sur OpenStack.
 
-OS : Fedora KDE (mon daily), Debian / Ubuntu.
+**[ NET.SEC ] - Réseau & Sécurité**
+* **Core :** Tunnels Cloudflare, Routage Multi-IP & Failover (pour séparer le Web du Game)
+* **DNS & Monit :** AdGuard Home, Uptime Kuma, Netdata
 
-Panels & Services : KeyHelp, Pterodactyl, Uptime Kuma, Netdata.
+**[ HARDWARE ] - La Ferraille (Base of Ops: Rouen, FR)**
+* **On-Premise :** Fujitsu Primergy RX300 S7 (Xeon E5) + Mini HP
+* **Stockage :** RAID 5 (*On vit dangereusement, la reconstruction d'un disque mort, c'est pour l'adrénaline*) + Switch 3Com Gigabit (une antiquité qui survivra à l'apocalypse).
 
-🌍 ./architecture - Ma prod (qui tient avec du duck tape et de la passion)
+---
 
-Je maintiens une petite infra hybride pour apprendre, tester, et héberger mes services (et ceux des potes) :
+### 🌍 `./architecture` - En Production
 
-🏚️ Le Bunker (On-Premise, FR) : Un Fujitsu Primergy RX300 S7 qui me sert littéralement de chauffage l'hiver, couplé à un Mini HP et un vieux switch 3Com 1Gbps increvable. C'est ici que je fais popper des VM pour tester des trucs. (Storage en RAID 5 : on vit dangereusement, la peur c'est pour les faibles).
+Je maintiens un lab hybride pour me faire la main avant la vraie prod en entreprise :
 
-☁️ Le Node Cloud (OVH Warsaw, PL) : Un Xeon-D / 32Go ECC / NVMe. C'est ici que j'ai transpiré pour dompter le routage Multi-IP sous Proxmox afin d'isoler mes IPs pour KeyHelp et Pterodactyl.
+* 🔥 **[Node Cloud OVH - Warsaw] :** Xeon-D 1540, 32Go ECC NVMe. J'y gère un routage Failover maison pour isoler proprement KeyHelp (Web) et Pterodactyl (Game).
+* 🏗️ **[Le Bunker Local] :** Le lab à la maison. L'endroit où je pète des configs réseau exprès pour apprendre à les réparer.
 
-🚀 ./roadmap - Objectifs à venir
+---
 
-[ ] OpenStack : Comprendre la bête. L'objectif ultime est de déployer du vrai IaaS sans faire sauter les plombs de tout mon quartier.
+### 🚀 `./roadmap` - Objectif 2026
 
-[ ] Automatisation : Arrêter de configurer des serveurs à la mano comme un paysan. Il faut que je me mette sérieusement à Ansible et Terraform.
+- [ ] **Trouver une alternance :** Intégrer une vraie équipe tech pour mon bac+2/bac+3 en administration systèmes et réseaux. Faire du support N1/N2 pour commencer ne me fait absolument pas peur, il faut bien apprendre à réparer les conneries des utilisateurs avant d'architecturer le réseau.
+- [ ] **Mastering IaaS :** Déployer du cloud privé avec OpenStack sans faire fondre le compteur Linky.
 
-[ ] Alternance 2026 : Trouver une boîte pour faire de l'infra (et honnêtement, commencer par du support N1/N2 pour faire mes armes ne me dérange absolument pas !).
+---
 
-📡 ./ping
+### 📡 `./ping`
 
-Tu cherches à discuter infra, tu as une alternance sous le coude, ou tu veux juste me dire que mon RAID 5 est une idée suicidaire ? Mes logs sont ouverts.
+Tu veux discuter infra, peering, ou m'expliquer pourquoi mon switch 3Com a sa place dans un musée ? 
 
-📫 Drop un TCP SYN : galaxix@oklmcloud.com (ou me@robin-predent.com)
+📫 **Drop un paquet UDP :** [me@robin-predent.com](mailto:me@robin-predent.com)
