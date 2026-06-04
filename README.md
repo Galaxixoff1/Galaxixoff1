@@ -32,7 +32,7 @@ Je ne suis **absolument pas un dev**. Si tu cherches des dépôts pleins de code
 Je maintiens un lab hybride pour me faire la main avant la vraie prod en entreprise :
 
 * 🔥 **[Node Cloud OVH - Warsaw] :** Xeon-D 1540, 32Go ECC NVMe. J'y gère un routage Failover maison pour isoler proprement KeyHelp (Web) et Pterodactyl (Game).
-* 🏗️ **[Le Bunker Local] :** Le lab à la maison. L'endroit où je pète des configs réseau exprès pour apprendre à les réparer.
+* 🏗️ **[Le Bunker Local] :** Le lab à la maison. L'endroit où je pète des configs réseau exprès *(ou pas... oups)* pour apprendre à les réparer.
 
 ---
 
